@@ -1,0 +1,428 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID SPEEDOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F874 ]
+[d frameptr 6 ]
+"464 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"31 C:\Users\broblesv\MPLABXProjects\Blink_874.X\eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"89
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"112
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"131
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"5 C:\Users\broblesv\MPLABXProjects\Blink_874.X\global.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"14
+[v _PIN_Initialize PIN_Initialize `(v  1 e 1 0 ]
+"8 C:\Users\broblesv\MPLABXProjects\Blink_874.X\i2c_lcd.c
+[v _is_I2C_idle is_I2C_idle `(v  1 e 1 0 ]
+"15
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"28
+[v _Write_I2C Write_I2C `(v  1 e 1 0 ]
+"44
+[v _lcd_write_byte lcd_write_byte `(v  1 e 1 0 ]
+"74
+[v _lcd_write_cmd lcd_write_cmd `(v  1 e 1 0 ]
+"92
+[v _putch putch `(v  1 e 1 0 ]
+"118
+[v _strobe strobe `(v  1 e 1 0 ]
+"160
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"227
+[v _scrollDisplayLeft scrollDisplayLeft `(v  1 e 1 0 ]
+"243
+[v _LCD_Write_Str LCD_Write_Str `(v  1 e 1 0 ]
+"55 C:\Users\broblesv\MPLABXProjects\Blink_874.X\main.c
+[v _InterruptManager InterruptManager `II(v  1 e 1 0 ]
+"129
+[v _main main `(v  1 e 1 0 ]
+"206
+[v _delay delay `(v  1 e 1 0 ]
+"209 C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic16f874.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S51 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"226
+[u S60 . 1 `S51 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES60  1 e 1 @6 ]
+"331
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S19 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"465
+[s S28 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S33 . 1 `S19 1 . 1 0 `S28 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES33  1 e 1 @11 ]
+[s S94 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"536
+[u S103 . 1 `S94 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES103  1 e 1 @12 ]
+"782
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"788
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"932
+[v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
+[s S261 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"962
+[s S270 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S274 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S277 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S280 . 1 `S261 1 . 1 0 `S270 1 . 1 0 `S274 1 . 1 0 `S277 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES280  1 e 1 @24 ]
+"1026
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1032
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1119
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S441 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1234
+[s S448 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S452 . 1 `S441 1 . 1 0 `S448 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES452  1 e 1 @129 ]
+"1283
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+[s S420 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1349
+[u S429 . 1 `S420 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES429  1 e 1 @134 ]
+[s S239 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1410
+[u S248 . 1 `S239 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES248  1 e 1 @135 ]
+"1454
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S73 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"1588
+[u S82 . 1 `S73 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES82  1 e 1 @140 ]
+"1697
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1764
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1770
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"1938
+[v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
+"2018
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2030
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2166
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2184
+[v _BCLIF BCLIF `VEb  1 e 0 @107 ]
+"2410
+[v _R_W R_W `VEb  1 e 0 @1186 ]
+"2414
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2426
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+[v _dpowers dpowers `DCC[5]ui  1 s 10 dpowers ]
+"17 C:\Users\broblesv\MPLABXProjects\Blink_874.X\eusart.c
+[v _eusartTxHead eusartTxHead `uc  1 s 1 eusartTxHead ]
+"18
+[v _eusartTxTail eusartTxTail `uc  1 s 1 eusartTxTail ]
+"19
+[v _eusartTxBuffer eusartTxBuffer `[8]uc  1 s 8 eusartTxBuffer ]
+"20
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"22
+[v _eusartRxHead eusartRxHead `uc  1 s 1 eusartRxHead ]
+"24
+[v _eusartRxBuffer eusartRxBuffer `[8]uc  1 s 8 eusartRxBuffer ]
+"25
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+"12 C:\Users\broblesv\MPLABXProjects\Blink_874.X\i2c_lcd.h
+[v _RS RS `uc  1 e 1 0 ]
+"125
+[v _uart uart `uc  1 e 1 0 ]
+"45 C:\Users\broblesv\MPLABXProjects\Blink_874.X\main.c
+[v _counter counter `VEuc  1 e 1 0 ]
+"46
+[v _RBP1 RBP1 `uc  1 e 1 0 ]
+"47
+[v _RBP2 RBP2 `uc  1 e 1 0 ]
+"48
+[v _RBP1_prev RBP1_prev `uc  1 e 1 0 ]
+"50
+[v _changed changed `VEuc  1 e 1 0 ]
+"129
+[v _main main `(v  1 e 1 0 ]
+{
+"165
+[v main@i i `i  1 a 2 31 ]
+"204
+} 0
+"227 C:\Users\broblesv\MPLABXProjects\Blink_874.X\i2c_lcd.c
+[v _scrollDisplayLeft scrollDisplayLeft `(v  1 e 1 0 ]
+{
+"230
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+[v printf@f f `*.24DCCuc  1 a 1 wreg ]
+"528
+[v printf@val val `ui  1 a 2 24 ]
+"499
+[v printf@c c `c  1 a 1 27 ]
+"506
+[v printf@prec prec `c  1 a 1 23 ]
+"508
+[v printf@flag flag `uc  1 a 1 22 ]
+"466
+[v printf@ap ap `[1]*.4v  1 a 1 21 ]
+"464
+[v printf@f f `*.24DCCuc  1 a 1 wreg ]
+"533
+[v printf@f f `*.24DCCuc  1 a 1 26 ]
+"1541
+} 0
+"92 C:\Users\broblesv\MPLABXProjects\Blink_874.X\i2c_lcd.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@data data `uc  1 a 1 wreg ]
+[v putch@data data `uc  1 a 1 wreg ]
+"94
+[v putch@data data `uc  1 a 1 16 ]
+"114
+} 0
+"89 C:\Users\broblesv\MPLABXProjects\Blink_874.X\eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 3 ]
+"110
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 14 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 10 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 12 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 7 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 9 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 3 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 5 ]
+"31
+} 0
+"74 C:\Users\broblesv\MPLABXProjects\Blink_874.X\i2c_lcd.c
+[v _lcd_write_cmd lcd_write_cmd `(v  1 e 1 0 ]
+{
+[v lcd_write_cmd@cmd cmd `uc  1 a 1 wreg ]
+"76
+[v lcd_write_cmd@shadow shadow `uc  1 a 1 13 ]
+"74
+[v lcd_write_cmd@cmd cmd `uc  1 a 1 wreg ]
+"78
+[v lcd_write_cmd@cmd cmd `uc  1 a 1 12 ]
+"85
+} 0
+"206 C:\Users\broblesv\MPLABXProjects\Blink_874.X\main.c
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@count count `uc  1 a 1 wreg ]
+"207
+[v delay@i i `i  1 a 2 6 ]
+"206
+[v delay@count count `uc  1 a 1 wreg ]
+[v delay@count count `uc  1 a 1 5 ]
+"209
+} 0
+"5 C:\Users\broblesv\MPLABXProjects\Blink_874.X\global.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"12
+} 0
+"14
+[v _PIN_Initialize PIN_Initialize `(v  1 e 1 0 ]
+{
+"35
+} 0
+"31 C:\Users\broblesv\MPLABXProjects\Blink_874.X\eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"63
+} 0
+"243 C:\Users\broblesv\MPLABXProjects\Blink_874.X\i2c_lcd.c
+[v _LCD_Write_Str LCD_Write_Str `(v  1 e 1 0 ]
+{
+[v LCD_Write_Str@message message `*.24DCCuc  1 a 1 wreg ]
+"245
+[v LCD_Write_Str@message_ptr message_ptr `*.24uc  1 a 1 15 ]
+"243
+[v LCD_Write_Str@message message `*.24DCCuc  1 a 1 wreg ]
+"245
+[v LCD_Write_Str@message message `*.24DCCuc  1 a 1 14 ]
+"249
+} 0
+"160
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"191
+} 0
+"44
+[v _lcd_write_byte lcd_write_byte `(v  1 e 1 0 ]
+{
+[v lcd_write_byte@data data `uc  1 a 1 wreg ]
+"46
+[v lcd_write_byte@shadow shadow `uc  1 a 1 13 ]
+"44
+[v lcd_write_byte@data data `uc  1 a 1 wreg ]
+"48
+[v lcd_write_byte@data data `uc  1 a 1 12 ]
+"57
+} 0
+"118
+[v _strobe strobe `(v  1 e 1 0 ]
+{
+[v strobe@cmd cmd `uc  1 a 1 wreg ]
+[v strobe@cmd cmd `uc  1 a 1 wreg ]
+"120
+[v strobe@cmd cmd `uc  1 a 1 11 ]
+"128
+} 0
+"28
+[v _Write_I2C Write_I2C `(v  1 e 1 0 ]
+{
+[v Write_I2C@data data `uc  1 a 1 wreg ]
+"30
+[v Write_I2C@ackflag ackflag `uc  1 a 1 9 ]
+"28
+[v Write_I2C@data data `uc  1 a 1 wreg ]
+"30
+[v Write_I2C@data data `uc  1 a 1 8 ]
+"40
+} 0
+"15
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"21
+} 0
+"8
+[v _is_I2C_idle is_I2C_idle `(v  1 e 1 0 ]
+{
+"11
+} 0
+"55 C:\Users\broblesv\MPLABXProjects\Blink_874.X\main.c
+[v _InterruptManager InterruptManager `II(v  1 e 1 0 ]
+{
+"128
+} 0
+"112 C:\Users\broblesv\MPLABXProjects\Blink_874.X\eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"129
+} 0
+"131
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"151
+} 0
